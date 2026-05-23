@@ -1,228 +1,237 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-	background-color: #d1d5db;
-	padding: 20px;
+    background-color: #d1d5db;
+    padding: 20px;
 }
 
 .container {
-	display: flex;
-	width: 900px;
-	margin: 0 auto;
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .left-column {
-	width: 600px;
-	background-color: white;
-	border-radius: 5px;
-	margin-right: 20px;
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
 .right-column {
-	width: 280px;
+    width: 280px;
 }
 
 @media (max-width: 650px) {
-	.container {
-		display: block;
-		width: 100%;
-	}
-	.left-column {
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 20px;
-	}
-	.right-column {
-		width: 100%;
-	}
+    .container {
+        display: block;
+        width: 100%;
+    }
+    .left-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .right-column {
+        width: 100%;
+    }
 }
 
 .add-form {
-	display: flex;
-	padding: 15px;
-	border-bottom: 1px solid #ccc;
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 .add-form input {
-	width: 80%;
-	padding: 10px;
-	border: 1px solid #ccc;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .add-form button {
-	width: 20%;
-	background-color: #3085d6;
-	color: white;
-	border: none;
-	cursor: pointer;
+    width: 20%;
+    background-color: #3085d6;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .item {
-	display: flex;
-	align-items: center;
-	padding: 15px;
-	border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 .item-name {
-	width: 40%;
-	font-size: 16px;
+    width: 40%;
+    font-size: 16px;
 }
 
 .bought-text {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .item-controls {
-	display: flex;
-	width: 30%;
+    display: flex;
+    width: 30%;
 }
 
 .btn-circle {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: none;
-	color: white;
-	cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 .btn-minus { background-color: #d33; }
 .btn-plus { background-color: #28a745; }
 
 .number {
-	background-color: #eee;
-	padding: 5px 15px;
-	margin: 0 5px;
-	border-radius: 5px;
+    background-color: #eee;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
 }
 
 .btn-status {
-	padding: 5px 10px;
-	border: 1px solid #ccc;
-	cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
 .btn-delete {
-	background-color: #d33;
-	color: white;
-	border: none;
-	padding: 5px 10px;
-	margin-left: 5px;
-	cursor: pointer;
+    background-color: #d33;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .stat-box {
-	background-color: white;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
 .stat-box h2 {
-	font-size: 18px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 .tag {
-	background-color: #eee;
-	display: inline-block;
-	padding: 5px;
-	border-radius: 5px;
-	margin-right: 5px;
-	font-size: 14px;
+    background-color: #eee;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
 }
 
 .tag-number {
-	background-color: orange;
-	color: white;
-	border-radius: 50%;
-	padding: 2px 6px;
-	font-size: 12px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
 }
 
 [data-tooltip] {
-	position: relative;
+    position: relative;
 }
 
 [data-tooltip]::before {
-	content: attr(data-tooltip);
-	position: absolute;
-	bottom: 40px;
-	left: 0;
-	background-color: purple;
-	color: white;
-	padding: 5px 10px;
-	border-radius: 10px;
-	font-size: 12px;
-	opacity: 0;
-	transform: scale(0.5);
-	transition: 0.3s;
-	pointer-events: none;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 0.3s;
+    pointer-events: none;
 }
 
 [data-tooltip]:hover::before {
-	opacity: 1;
-	transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .badge {
-	position: fixed;
-	bottom: -40px;
-	left: 20px;
-	width: 160px;
-	height: 100px;
-	background-color: #800080;
-	color: white;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	text-align: center;
-	padding-top: 15px;
-	transition: 0.5s;
+    position: fixed;
+    bottom: -40px;
+    left: 20px;
+    width: 160px;
+    height: 100px;
+    background-color: #800080;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding-top: 15px;
+    transition: 0.5s;
 }
 
 .badge-author {
-	margin-top: 25px;
-	font-size: 14px;
-	display: none;
+    margin-top: 25px;
+    font-size: 14px;
+    display: none;
 }
 
 .badge:hover {
-	bottom: 0;
-	background-color: #4b0082;
+    bottom: 0;
+    background-color: #4b0082;
 }
 
 .badge:hover .badge-author {
-	display: block;
+    display: block;
 }
 
-
 @media print {
+    body {
+        background-color: white;
+    }
 
-	body {
-		background-color: white;
-	}
+    .badge {
+        position: static;
+        background-color: white;
+        border: 2px solid purple;
+        color: black;
+    }
 
-	.badge {
-		position: static;
-		background-color: white;
-		border: 2px solid purple;
-		color: black;
-	}
+    .badge-title {
+        display: none;
+    }
 
-	.badge-title {
-		display: none;
-	}
+    .badge-author {
+        display: block;
+        margin-top: 0;
+    }
+}
 
-	.badge-author {
-		display: block;
-		margin-top: 0;
-	}
+.edit-input {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btn-minus[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
 }

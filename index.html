@@ -10,39 +10,22 @@
     <div class="container">
         <div class="left-column">
             <div class="add-form">
-                <input type="text" placeholder="Назва товару">
-                <button data-tooltip="Додати новий товар">Додати</button>
+                <input type="text" id="add-input" placeholder="Назва товару">
+                <button id="add-btn" data-tooltip="Додати новий товар">Додати</button>
             </div>
             
-            <div class="item">
-                <div class="item-name bought-text">Помідори</div>
-                <div class="item-controls">
-                    <span class="number">2</span>
-                </div>
-                <button class="btn-status" data-tooltip="Змінити статус">Не куплено</button>
-            </div>
-
-            <div class="item">
-                <div class="item-name">Печиво</div>
-                <div class="item-controls">
-                    <button class="btn-circle btn-minus" data-tooltip="Менше">-</button>
-                    <span class="number">2</span>
-                    <button class="btn-circle btn-plus" data-tooltip="Більше">+</button>
-                </div>
-                <button class="btn-status">Куплено</button>
-                <button class="btn-delete" data-tooltip="Видалити">x</button>
-            </div>
+            <div id="items-list"></div>
         </div>
 
         <div class="right-column">
             <div class="stat-box">
                 <h2>Залишилося</h2>
-                <div class="tag">Печиво <span class="tag-number">2</span></div>
+                <div id="left-to-buy-list"></div>
             </div>
             
             <div class="stat-box">
                 <h2>Куплено</h2>
-                <div class="tag bought-text">Помідори <span class="tag-number">2</span></div>
+                <div id="bought-list"></div>
             </div>
         </div>
     </div>
@@ -52,5 +35,6 @@
         <div class="badge-author">Created by:<br>Пожаров Костянтин</div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
